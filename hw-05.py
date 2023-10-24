@@ -1,5 +1,6 @@
 # Import libraries
 import numpy as np
+import matplotlib.pyplot as plt
 
 # Two assets with given mu and sigma
 # We will create a portfolio with these two assets
@@ -7,10 +8,12 @@ import numpy as np
 mu = np.array([1, 0.8])
 
 
+# Covariance matrix of the two assets with correlation rho (variance given)
 def cov_matrix(rho):
     return np.array([[0.1**2, rho * 0.1 * 0.12], [rho * 0.1 * 0.12, 0.12**2]])
 
 
+# Portfolio return and standard deviation
 def mu_sigma(weight, mu_vec, cov_mat):
     mu = np.dot(weight, mu_vec)
     sigma = np.sqrt(np.dot(weight.T, np.dot(cov_mat, weight)))
@@ -18,9 +21,6 @@ def mu_sigma(weight, mu_vec, cov_mat):
 
 
 # Plot the efficient frontier
-import matplotlib.pyplot as plt
-
-
 def efficient_frontier(rho):
     # Let's create a list of weights
     weight_list = []
@@ -37,11 +37,11 @@ def efficient_frontier(rho):
     return mu_list, sigma_list
 
 
-mu_list, sigma_list = efficient_frontier(1)
-
 # Plot the efficient frontier
+mu_list, sigma_list = efficient_frontier(-1)
 plt.plot(sigma_list, mu_list)
-# Add the assets to the plot
-plt.scatter(0.1, 1)
-plt.scatter(0.12, 0.8)
+plt.scatter(0.1, 1, label="Asset 1")
+plt.scatter(0.12, 0.8, label="Asset 2")
+plt.legend()
+plt.grid()
 plt.show()
