@@ -20,8 +20,8 @@ def mu_sigma(weight, mu_vec, cov_mat):
     return mu, sigma
 
 
-# Plot the efficient frontier
-def efficient_frontier(rho):
+# Get mu und sigma of the portfolio for all weights
+def mu_sigma_all_weights(rho):
     # Let's create a list of weights
     weight_list = []
     for w in np.arange(0, 1.01, 0.01):
@@ -38,10 +38,10 @@ def efficient_frontier(rho):
 
 
 # Plot the efficient frontier
-mu_list, sigma_list = efficient_frontier(-1)
+mu_list, sigma_list = mu_sigma_all_weights(-0.5)
 plt.plot(sigma_list, mu_list)
-plt.scatter(0.1, 1, label="Asset 1")
-plt.scatter(0.12, 0.8, label="Asset 2")
-plt.legend()
 plt.grid()
+plt.scatter(0.1, 1, label="Asset 1", color="red")
+plt.scatter(0.12, 0.8, label="Asset 2", color="green")
+plt.legend()
 plt.show()
