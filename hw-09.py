@@ -32,7 +32,7 @@ def plot_mse_uniform_mle(theta, n_range):
 
 if __name__ == "__main__":
     # Define sample size range
-    n_range = np.arange(1, 500, 1)
+    n_range = np.arange(1, 51, 1)
     # Define theta (try other values)
     theta = 1
     # Plot MSE of uniform ML estimator for a given theta and sample size range
