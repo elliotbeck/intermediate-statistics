@@ -4,7 +4,12 @@ This repository serves as official code source for the course Intermediate Stati
 
 ## Note
 
-I include some data in this repo, which is not good practice in general. I try to make up for it by using [Git LFS](https://git-lfs.com), which replaces large files such as audio samples, videos, datasets, and graphics with text pointers inside Git, while storing the file contents on a remote server.
+I include some data in this repo, which is not good practice in general. I try
+to make up for it by using [Git LFS](https://git-lfs.com), which replaces large
+files such as audio samples, videos, datasets, and graphics with text pointers
+inside Git, while storing the file contents on a remote server. 
+
+IMPORTANT: You need to install Git LFS on your machine before cloning this repo.
 
 ## Sources
 
