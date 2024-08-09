@@ -114,7 +114,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Sources
 
 All code is authored by myself unless otherwise noted. Any external libraries or resources used are cited within the corresponding scripts or notebooks.
-
----
-
-This new section provides a detailed explanation of how to use Poetry for dependency management, making it easier for users to set up and contribute to the project.
