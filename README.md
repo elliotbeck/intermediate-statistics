@@ -1,7 +1,3 @@
-Here's how you can incorporate a section describing the usage of Poetry in your README:
-
----
-
 # Intermediate Statistics
 
 Welcome to the official repository for the Intermediate Statistics course
