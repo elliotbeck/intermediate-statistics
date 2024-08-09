@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "intermediate-statistics"
+package-mode = false
+authors = ["Elliot Beck <elliot.beck@bf.uzh.ch>"]
+maintainers = ["Elliot Beck <elliot.beck@bf.uzh.ch>"]
+readme = "README.md"
+repository = "https://github.com/elliotbeck/intermediate-statistics"
+description = "Demo scripts for the course Intermediate Statistics"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+matplotlib = "^3.6.2"
+numpy = "^1.23.5"
+pandas = "^1.5.2"
+scipy = "^1.10.0"
+
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
