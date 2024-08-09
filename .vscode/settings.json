@@ -2,5 +2,5 @@
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter"
     },
-    "python.formatting.provider": "none"
+    "python.defaultInterpreterPath": "/home/ubuntu/.cache/pypoetry/virtualenvs/intermediate-statistics-qz34OUO1-py3.9/bin/python"
 }
