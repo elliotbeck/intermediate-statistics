@@ -103,10 +103,6 @@ This repository includes some datasets to facilitate reproducibility and ease of
 
 Contributions are welcome! If you find any bugs or typos, please [open an issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue), and I will address them as soon as possible. Even better, feel free to fork the repository and submit a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork) with your improvements.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Sources
 
 All code is authored by myself unless otherwise noted. Any external libraries or resources used are cited within the corresponding scripts or notebooks.
